@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 50px;
+}
+.cabeçalho{
+    background-color: rgb(20, 139, 9);
+    display: flex;
+    align-items: left;
+    font: 16px "Arial";
+    flex-direction: column;
+    width: 235px;
+    height: 100%;
+}
+button{
+    background-color: transparent;
+    border: 1px solid pink;
+    /*border: none;*/
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    padding: 30px;
+    top: 30px;
+}
+img{
+    width: 25px;
+    height: 25px;
+    /*left: 10px;
+    bottom: 700px;*/
+}
+li{
+    list-style: none;
+    bottom: 30px;
+}
+a{
+    flex-direction: column;
+    text-decoration: none;
+    color: ghostwhite;
+}
+#sobrenos{
+    margin: 40px;
+    background-color: pink;
+
+}
