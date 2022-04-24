@@ -94,6 +94,12 @@
     border-left-color: #12FF72;
 }
 
+.inicio:active{
+    border-left: 4px;
+    border-left-color: #12FF72;
+    padding-left: 4px;
+}
+
 .submenu a{
     list-style: none;
     font-size: 14px;
