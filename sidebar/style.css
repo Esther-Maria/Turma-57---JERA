@@ -6,7 +6,7 @@
 }
 
 .sidebar{
-    width: 250px;
+    width: 15.6rem;
     height: 100%;
     float: left;
     position: fixed;
@@ -17,8 +17,8 @@
 
 .logo{
     text-align: center;
-    padding-top: 48px;
-    padding-bottom: 80px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .perfil{
@@ -65,7 +65,7 @@
 }
 
 .menu{
-    margin-top: 45px;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,7 +82,7 @@
 }
 
 .menu li:not(:last-child){
-    margin-bottom: 24px;
+    margin-bottom: 0.8rem;
 }
 
 .menu a{
@@ -119,12 +119,12 @@
 
 .logout{
     bottom: 0;
-    margin-left: 14px;
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     position: absolute;
     align-items: center;
-    margin-bottom: 14px;
+    margin-bottom: 0.8rem;
 }
 
 .designedBy-footer{
