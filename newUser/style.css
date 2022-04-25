@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+}
+
+body{
+    display: flex;
+    background-color: rgba(17, 17, 17, 0.199);
+}
+
+iframe{
+    height: auto;
+    width: 15.6rem;
+}
+
+.container-popup{
+    width: fit-content;
+    height: 100%;
+    top: 150px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fcfcfc;
+}
+

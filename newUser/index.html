@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../sidebar/imgs/favicon.svg">
+</head>
+<body>
+    <div class="container-popup">
+        <form class="form-newUser">
+            <span class="newUser-form-title">
+                Novo Usuário
+            </span>
+            <div class="nome">
+                <div class="icon-nome-sobrenome">
+                    <img src="imgs/nome_sobrenome.png" alt="Icone Nome">
+                </div>
+                <input class="input-newUser" type="text" name="nome">
+                <span class="focus-input-newUser" data-placeholder="Nome"></span>
+            </div>
+            <div class="sobrenome">
+                <div class="icon-nome-sobrenome">
+                    <img src="imgs/nome_sobrenome.png" alt="Icone Sobrenome">
+                </div>
+                <input class="input-newUser" type="text" name="sobrenome">
+                <span class="focus-input-newUser" data-placeholder="Sobrenome"></span>
+            </div>
+            <div class="telefone">
+                <div class="icon-tel">
+                    <img src="imgs/telefone.png" alt="Icone Telefone">
+                </div>
+                <input class="input-newUser" type="tel" name="telefone">
+                <span class="focus-input-newUser" data-placeholder="Telefone"></span>
+            </div>
+            <div class="email">
+                <div class="icon-tel">
+                    <img src="imgs/email.png" alt="Icone E-mail">
+                </div>
+                <input class="input-newUser" type="email" name="email">
+                <span class="focus-input-newUser" data-placeholder="E-mail"></span>
+            </div>
+            <div class="perfilUser">
+                <div class="icon-perfilUser">
+                    <img src="imgs/perfilUser.png" alt="Icone Perfil do Usuário">
+                </div>
+                <select name="perfilUser" id="perfilUsuario">
+                    <option value="administrador">Administrador</option>
+                    <option value="golaborador">Colaborador</option>
+                    <option value="gestor">Gestor</option>
+                </select>
+            </div>
+            <p>A senha será gerada automaticamente e enviada por e-mail ao usuário. Durante o primeiro acesso, o usuário poderá alterar a sua senha.</p>
+            <div class="btn-cancelar-criar">
+                <button class="btn-cancelar">
+                    Cancelar
+                </button>
+                <button class="btn-criar">
+                    Criar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
