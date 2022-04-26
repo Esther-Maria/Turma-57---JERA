@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+}
+
+body{
+    display: flex;
+}
+
+iframe{
+    height: auto;
+    width: 15.6rem;
+}
+
+.sidebar{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: rgba(17, 17, 17, 0.40);
+}
+
+.container-popup{
+    width: 30rem;
+    height: 26rem;
+    top: 6rem;
+    margin: 0 auto;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: #fcfcfc;
+    border: 1px solid #0db551;
+    border-radius: 10px;
+}
+
+.form-newUser{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #111;
+}
+
+.newUser-form-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-input{
+    background-color: #F0F0F0;
+    color: 868686;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    height: 1.2rem;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+}
+
+.form-input:last-child{
+    margin-bottom: 2rem;
+}
+
+.form-input:hover{
+    border: 1px solid #9C4DD9;
+}
+
+.input-newUser{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.focus-input-newUser{
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#nivelUsuario{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.icons{
+    padding-right: 0.5rem;
+}
+
+#icon{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+#icon-widthBigger{
+    width: 1.5rem;
+    height: 1.4rem;
+}
+
+#aviso{
+    font-size: 0.84rem;
+}
+
+.btns-cancelar-criar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn-cancelar{
+    width: 7rem;
+    height: 1.6rem;
+    outline: none;
+    border: 2px solid #9C4DD9;
+    border-radius: 40px;
+    color: #9C4DD9;
+    background-color: transparent;
+    font-size: 0.84rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-criar{
+    width: 7rem;
+    height: 1.6rem;
+    outline: none;
+    border: 2px solid #0db551;
+    border-radius: 40px;
+    color: #fcfcfc;
+    background-color: #0db551;
+    font-size: 0.84rem;
+    font-family: "Montserrat", sans-serif;
+}
