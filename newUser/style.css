@@ -12,6 +12,7 @@ body{
 iframe{
     height: auto;
     width: 15.6rem;
+    border: none;
 }
 
 .sidebar{
@@ -35,7 +36,7 @@ iframe{
     height: 26rem;
     top: 6rem;
     margin: 0 auto;
-    padding: 32px;
+    padding: 24px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -50,6 +51,7 @@ iframe{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #111;
 }
 
@@ -62,16 +64,13 @@ iframe{
 .form-input{
     background-color: #F0F0F0;
     color: 868686;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     display: flex;
-    height: 1.2rem;
-    padding: 8px 8px;
+    height: 1.4rem;
+    padding: 7px 8px;
     border: 1px solid transparent;
-}
-
-.form-input:last-child{
-    margin-bottom: 2rem;
+    border-radius: 6px;
+    position: relative;
 }
 
 .form-input:hover{
@@ -79,29 +78,53 @@ iframe{
 }
 
 .input-newUser{
+    font-size: 0.8rem;
     border: none;
     background-color: transparent;
     width: 100%;
     outline: none;
-}
-
-.focus-input-newUser{
-    color: red;
+    color: #111;
     font-family: "Montserrat", sans-serif;
-    position: absolute;
     display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
 }
 
-#nivelUsuario{
+.nivelUsuario{
     width: 100%;
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
+    font-size: 0.84rem;
+    color: #111;
+    padding-right: 2rem;
+}
+
+.nivelUsuario option{
+    background-color: #F0F0F0;
+    color: #111;
+    font-size: 0.9rem;
+}
+
+.nivelUsuario option:checked{
+    background-color: #9c4dd971;
+}
+
+.custom-arrow{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    height: 100%;
+    background-color: #DABDF0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    pointer-events: none;
+    background-image: url(imgs/customArrow.svg);
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+    background-position: center;
 }
 
 .icons{
@@ -114,40 +137,43 @@ iframe{
 }
 
 #icon-widthBigger{
-    width: 1.5rem;
-    height: 1.4rem;
+    width: 1.4rem;
+    height: 1.3rem;
 }
 
 #aviso{
-    font-size: 0.84rem;
+    padding: 0 10px;
+    font-size: 0.80rem;
+    text-align: center;
 }
 
 .btns-cancelar-criar{
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+
 }
 
 .btn-cancelar{
-    width: 7rem;
-    height: 1.6rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
     outline: none;
     border: 2px solid #9C4DD9;
     border-radius: 40px;
     color: #9C4DD9;
     background-color: transparent;
-    font-size: 0.84rem;
     font-family: "Montserrat", sans-serif;
 }
 
 .btn-criar{
-    width: 7rem;
-    height: 1.6rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
     outline: none;
     border: 2px solid #0db551;
     border-radius: 40px;
     color: #fcfcfc;
     background-color: #0db551;
-    font-size: 0.84rem;
     font-family: "Montserrat", sans-serif;
 }
