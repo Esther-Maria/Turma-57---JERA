@@ -27,6 +27,7 @@ iframe{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 1;
     background-color: rgba(17, 17, 17, 0.40);
 }
@@ -105,9 +106,15 @@ iframe{
     font-size: 0.9rem;
 }
 
+.nivelUsuario option::after{
+    border-radius: 20px;
+    color: red;
+} 
+
 .nivelUsuario option:checked{
     background-color: #9c4dd971;
 }
+
 
 .custom-arrow{
     display: block;
@@ -164,6 +171,7 @@ iframe{
     color: #9C4DD9;
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
+    cursor: pointer;
 }
 
 .btn-criar{
@@ -176,4 +184,5 @@ iframe{
     color: #fcfcfc;
     background-color: #0db551;
     font-family: "Montserrat", sans-serif;
+    cursor: pointer;
 }

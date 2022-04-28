@@ -15,7 +15,7 @@ iframe{
     border: none;
 }
 
-.main-content{
+.container-content{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -135,6 +135,21 @@ iframe{
 
 #pedidos:hover, #pedidos:active{
     color: #0DB551;
+}
+
+
+.carrosel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 3rem;
+    border: 1px solid red;
+}
+
+.cardOne{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer{
