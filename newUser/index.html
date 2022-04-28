@@ -10,59 +10,61 @@
     <link rel="icon" type="image/x-icon" href="../sidebar/imgs/favicon.svg">
 </head>
 <body>
-    <div class="container-popup">
-        <form class="form-newUser">
-            <span class="newUser-form-title">
-                Novo Usuário
-            </span>
-            <div class="nome">
-                <div class="icon-nome-sobrenome">
-                    <img src="imgs/nome_sobrenome.png" alt="Icone Nome">
+    <div class="sidebar">
+        <iframe src="../sidebar/index.html" allowtransparency="yes"></iframe>
+    </div>
+    <div class="main-container">
+        <main class="container-popup">
+            <form class="form-newUser">
+                <span class="newUser-form-title">
+                    Novo Usuário
+                </span>
+                <div class="form-input">
+                    <div class="icons">
+                        <img src="imgs/userIcon.svg" id="icon" alt="Icone Nome">
+                    </div>
+                    <input class="input-newUser" type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off">
                 </div>
-                <input class="input-newUser" type="text" name="nome">
-                <span class="focus-input-newUser" data-placeholder="Nome"></span>
-            </div>
-            <div class="sobrenome">
-                <div class="icon-nome-sobrenome">
-                    <img src="imgs/nome_sobrenome.png" alt="Icone Sobrenome">
+                <div class="form-input">
+                    <div class="icons">
+                        <img src="imgs/userIcon.svg" id="icon" alt="Icone Sobrenome">
+                    </div>
+                    <input class="input-newUser" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="off">
                 </div>
-                <input class="input-newUser" type="text" name="sobrenome">
-                <span class="focus-input-newUser" data-placeholder="Sobrenome"></span>
-            </div>
-            <div class="telefone">
-                <div class="icon-tel">
-                    <img src="imgs/telefone.png" alt="Icone Telefone">
+                <div class="form-input">
+                    <div class="icons">
+                        <img src="imgs/telIcon.svg" id="icon" alt="Icone Telefone">
+                    </div>
+                    <input class="input-newUser" type="tel" id="telefone" name="telefone" placeholder="Telefone" autocomplete="off">
                 </div>
-                <input class="input-newUser" type="tel" name="telefone">
-                <span class="focus-input-newUser" data-placeholder="Telefone"></span>
-            </div>
-            <div class="email">
-                <div class="icon-tel">
-                    <img src="imgs/email.png" alt="Icone E-mail">
+                <div class="form-input">
+                    <div class="icons">
+                        <img src="imgs/emailIcon.svg" id="icon-widthBigger" alt="Icone E-mail">
+                    </div>
+                    <input class="input-newUser" type="email" id="email" name="email" placeholder="E-mail" autocomplete="off">
                 </div>
-                <input class="input-newUser" type="email" name="email">
-                <span class="focus-input-newUser" data-placeholder="E-mail"></span>
-            </div>
-            <div class="perfilUser">
-                <div class="icon-perfilUser">
-                    <img src="imgs/perfilUser.png" alt="Icone Perfil do Usuário">
+                <div class="form-input">
+                    <div class="icons">
+                        <img src="imgs/nivelUserIcon.svg" id="icon-widthBigger" alt="Icone Perfil do Usuário">
+                    </div>
+                    <select class="nivelUsuario" id="nivelUsuario" name="nivelUsuario" placeholder="Nível do Usuário">
+                        <option value="administrador">Administrador</option>
+                        <option value="colaborador">Colaborador</option>
+                        <option value="gestor">Gestor</option>
+                    </select>
+                    <span class="custom-arrow"></span>
                 </div>
-                <select name="perfilUser" id="perfilUsuario">
-                    <option value="administrador">Administrador</option>
-                    <option value="golaborador">Colaborador</option>
-                    <option value="gestor">Gestor</option>
-                </select>
-            </div>
-            <p>A senha será gerada automaticamente e enviada por e-mail ao usuário. Durante o primeiro acesso, o usuário poderá alterar a sua senha.</p>
-            <div class="btn-cancelar-criar">
-                <button class="btn-cancelar">
-                    Cancelar
-                </button>
-                <button class="btn-criar">
-                    Criar
-                </button>
-            </div>
-        </form>
+                <p id="aviso">A senha padrão será gerada automaticamente e enviada por e-mail ao usuário. Durante o primeiro acesso, o mesmo poderá alterar sua senha.</p>
+                <div class="btns-cancelar-criar">
+                    <button class="btn-cancelar">
+                        Cancelar
+                    </button>
+                    <button class="btn-criar">
+                        Criar
+                    </button>
+                </div>
+            </form>
+        </main>
     </div>
 </body>
 </html>

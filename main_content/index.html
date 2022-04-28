@@ -10,9 +10,9 @@
     <link rel="icon" type="image/x-icon" href="../sidebar/imgs/favicon.svg">
 </head>
 <body> 
-    <iframe src="../sidebar/index.html" frameborder="0"></iframe>
-    <div class="main-content">
-        <div class="content">
+    <iframe src="../sidebar/index.html"></iframe>
+    <div class="container-content">
+        <main class="content">
             <div class="container-welcome">
                 <div class="welcome-userName">
                     <h1 id="welcome">Seja bem-vindo(a),&#160;</h1>
@@ -36,13 +36,13 @@
                             <ul>
                                 <li>
                                     <div class="icons-filtro">
-                                        <img src="imgs/brindes.svg" alt="icone brindes" width="14px" height="14px">
+                                        <img src="imgs/brindes.svg" alt="icone brindes">
                                     </div>
                                     <a href="#" id="brindes">Brindes</a>
                                 </li>
                                 <li>
                                     <div class="icons-filtro">
-                                        <img src="imgs/pedidos.png" alt="icone pedidos" width="14px" height="14px">
+                                        <img src="imgs/pedidos.svg" alt="icone pedidos">
                                     </div>
                                     <a href="#" id="pedidos">Pedidos</a>
                                 </li>
@@ -50,8 +50,25 @@
                         </nav>
                     </div>
                 </div>
+                <div class="carrosel">
+                    <div class="cardOne">
+                        <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                        <h1 class="nomeUser" id="userName" name="userName">Maria Clara</h1>
+                        <h2 class="userLevel">Colaboradora</h2>
+                        <h3 class="pedido">Fez pedido do equipamento:</h3>
+                        <h4 class="equipSolicitado" id="nomeEquip" name="nomeEquip">Notebook ACER 07</h4>
+                        <h5 class="mensagemColab" id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</h5>
+                        <button class="visualizarNot">Visualizar</button>
+                        <div class="data-hora-pedido">
+                            <p class="dataPedido">Data do pedido:</p>
+                            <p class="dataPedido" id="dataPedido" name="dataPedido">27/09/2021</p>
+                            <p class="horaPedido" id="horaPedido" name="horaPedido">14:22</p>
+                            <p class="horaPedido">Hrs</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
         <footer>
             <p id="ano-designedBy"> 2022 | Designed By&nbsp;</p>
             <a href="#" id="fabricaSoftware">Fábrica de Software T.57&#160;</a>
