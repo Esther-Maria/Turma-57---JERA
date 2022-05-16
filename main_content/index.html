@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../sidebar/imgs/favicon.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Início</title>
 </head>
 <body> 
@@ -51,67 +53,161 @@
                 </nav>
             </div>
         </div>
-        <div class="carrosel">
-            <div class="cardEquip">
-                <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
-                <h1 id="userName-card" name="userName">Maria Clara</h1>
-                <p id="userLevel" name="userLevel">Colaboradora</p>
-                <p id="fezPedido">Fez pedido do equipamento:</p>
-                <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
-                <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
-                <button class="equip-visualizarNot">Visualizar</button>
-                <div class="data-hora-pedido">
-                    <div class="dataPedido">
-                        <p id="dataPedido">Data do pedido:&nbsp;</p>
-                        <p id="dataPedido" name="dataPedido">27/09/2021</p>
+        <div class="carrossel">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <div class="cardEquip">
+                            <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                            <h1 id="userName-card" name="userName">Maria Clara</h1>
+                            <p id="userLevel" name="userLevel">Colaboradora</p>
+                            <p id="fezPedido">Fez pedido do equipamento:</p>
+                            <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
+                            <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
+                            <button class="equip-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Data do pedido:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">27/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="horaPedido">
-                        <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
-                        <p id="horaPedido">hrs</p>
+                    <div class="swiper-slide card">
+                        <div class="cardBrinde">
+                            <div class="brindeCard">
+                                <img src="imgs/brindesCard.svg" alt="Brindes Icone">
+                            </div>
+                            <h1 id="estoqueBaixo">Estoque Baixo</h1>
+                            <p id="nomeBrinde" name="nomeBrinde">Camiseta JERA M</p>
+                            <h2 id="mensagemEstoque">Este item está abaixo de 10 unidade em estoque.</h2>
+                            <p id="qntBrinde" name="qntBrinde">(08)</p>
+                            <button class="brinde-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Desde:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">25/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">09:50&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="cardEquip">
+                            <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                            <h1 id="userName-card" name="userName">Maria Clara</h1>
+                            <p id="userLevel" name="userLevel">Colaboradora</p>
+                            <p id="fezPedido">Fez pedido do equipamento:</p>
+                            <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
+                            <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
+                            <button class="equip-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Data do pedido:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">27/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="cardEquip">
+                            <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                            <h1 id="userName-card" name="userName">Maria Clara</h1>
+                            <p id="userLevel" name="userLevel">Colaboradora</p>
+                            <p id="fezPedido">Fez pedido do equipamento:</p>
+                            <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
+                            <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
+                            <button class="equip-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Data do pedido:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">27/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="cardEquip">
+                            <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                            <h1 id="userName-card" name="userName">Maria Clara</h1>
+                            <p id="userLevel" name="userLevel">Colaboradora</p>
+                            <p id="fezPedido">Fez pedido do equipamento:</p>
+                            <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
+                            <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
+                            <button class="equip-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Data do pedido:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">27/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="cardEquip">
+                            <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
+                            <h1 id="userName-card" name="userName">Maria Clara</h1>
+                            <p id="userLevel" name="userLevel">Colaboradora</p>
+                            <p id="fezPedido">Fez pedido do equipamento:</p>
+                            <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
+                            <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
+                            <button class="equip-visualizarNot">Visualizar</button>
+                            <div class="data-hora-pedido">
+                                <div class="dataPedido">
+                                    <p id="dataPedido">Data do pedido:&nbsp;</p>
+                                    <p id="dataPedido" name="dataPedido">27/09/2021</p>
+                                </div>
+                                <div class="horaPedido">
+                                    <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
+                                    <p id="horaPedido">hrs</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cardBrinde">
-                <div class="brindeCard">
-                    <img src="imgs/brindesCard.svg" alt="Brindes Icone">
-                </div>
-                <h1 id="estoqueBaixo">Estoque Baixo</h1>
-                <p id="nomeBrinde" name="nomeBrinde">Camiseta JERA M</p>
-                <h2 id="mensagemEstoque">Este item está abaixo de 10 unidade em estoque.</h2>
-                <p id="qntBrinde" name="qntBrinde">(08)</p>
-                <button class="brinde-visualizarNot">Visualizar</button>
-                <div class="data-hora-pedido">
-                    <div class="dataPedido">
-                        <p id="dataPedido">Desde:&nbsp;</p>
-                        <p id="dataPedido" name="dataPedido">25/09/2021</p>
-                    </div>
-                    <div class="horaPedido">
-                        <p id="horaPedido" name="horaPedido">09:50&nbsp;</p>
-                        <p id="horaPedido">hrs</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cardEquip">
-                <img src="../sidebar/imgs/minha_fota.png" alt="Foto Usuário" id="fotoPerfil">
-                <h1 id="userName-card" name="userName">Maria Clara</h1>
-                <p id="userLevel" name="userLevel">Colaboradora</p>
-                <p id="fezPedido">Fez pedido do equipamento:</p>
-                <h2 id="nomeEquip" name="nomeEquip">Notebook ACER 07</h2>
-                <p id="mensagemColab" name="mensagemColab">Oi, estou precisando de um not para trabalhar.</p>
-                <button class="equip-visualizarNot">Visualizar</button>
-                <div class="data-hora-pedido">
-                    <div class="dataPedido">
-                        <p id="dataPedido">Data do pedido:&nbsp;</p>
-                        <p id="dataPedido" name="dataPedido">27/09/2021</p>
-                    </div>
-                    <div class="horaPedido">
-                        <p id="horaPedido" name="horaPedido">14:22&nbsp;</p>
-                        <p id="horaPedido">hrs</p>
-                    </div>
-                </div>
-            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
         </div>
     </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView:4,
+            spaceBetween:10,
+            slidesPerGroup:4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el:".swiper-pagination",
+                clickable: true,
+            },
+            navigation:{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+    </script>
     <footer>
         <p id="ano-designedBy"> 2022 | Designed By&nbsp;</p>
         <a href="#" id="fabricaSoftware">Fábrica de Software T.57&#160;</a>

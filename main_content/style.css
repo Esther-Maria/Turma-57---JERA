@@ -9,7 +9,7 @@ body{
     display: grid;
     grid-template-areas: 
     "sidebar header"
-    "sidebar carrosel"
+    "sidebar carrossel"
     "sidebar footer";
 
     grid-template-columns: max-content;
@@ -94,7 +94,7 @@ iframe{
     flex-direction: column;
     padding: 0;
     margin: 2rem 0 1.5rem 3rem;
-    grid-area: carrosel;
+    grid-area: carrossel;
 }
 
 #ult-not{
@@ -143,14 +143,17 @@ iframe{
     color: #0DB551;
 }
 
-.carrosel{
+.carrossel{
     display: flex;
-    justify-content: space-around;
-    margin: 2.5rem 3rem 0 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2.5rem 6rem 0 0;
+    padding: 0 0 3rem 0;
 }
 
 .cardEquip, .cardBrinde{
-    width: 17rem;
+    width: 15rem;
     height: 26rem;
     display: flex;
     flex-direction: column;
@@ -288,4 +291,21 @@ footer{
 #fabricaSoftware:hover{
     color: #0DB451;
     font-weight: bold;
+}
+
+.swiper{
+    width: 1200px;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: #0DB451;
+    opacity: 0.7;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: #0DB451; 
 }
