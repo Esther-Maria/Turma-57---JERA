@@ -9,11 +9,11 @@ body{
     display: grid;
     grid-template-areas: 
     "sidebar header"
-    "sidebar carrosel"
+    "sidebar carrossel"
     "sidebar footer";
 
     grid-template-columns: max-content;
-    grid-template-rows: 8.5rem 1fr 1.5rem;
+    grid-template-rows: 15rem 1fr 1.5rem;
 }
 
 header{
@@ -24,8 +24,8 @@ header{
 .container-welcome{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 3rem;
-    margin-top: 1.5rem;
     bottom: 0;
 }
 
@@ -93,13 +93,8 @@ iframe{
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
-    grid-area: carrosel;
-}
-
-.titulo-filtro{
-    margin-top: 2rem;
-    margin-left: 3rem;
+    margin: 2rem 0 1.5rem 3rem;
+    grid-area: carrossel;
 }
 
 #ult-not{
@@ -148,15 +143,18 @@ iframe{
     color: #0DB551;
 }
 
-.carrosel{
+.carrossel{
     display: flex;
-    justify-content: space-around;
-    margin: 1.5rem 3rem 1.5rem 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2.5rem 6rem 0 0;
+    padding: 0 0 3rem 0;
 }
 
 .cardEquip, .cardBrinde{
     width: 15rem;
-    height: 21rem;
+    height: 26rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -164,7 +162,7 @@ iframe{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 10px 10px 4px 10px;
 }
 
 .cardEquip{
@@ -198,38 +196,40 @@ iframe{
 }
 
 #userName-card, #estoqueBaixo{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #userLevel, #nomeBrinde{
-    font-size: 0.7rem;
-    font-weight: lighter;
+    font-size: 1rem;
     border-bottom: 2px solid #111;
+    font-family: "Nunito", sans-serif;
 }
 
 #fezPedido{
-    font-size: 0.7rem;
-    font-weight: lighter;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
 }
 
 #nomeEquip, #mensagemEstoque{
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin: 10px 0px;
 }
 
 #mensagemColab{
-    height: 3.5rem;
-    font-size: 0.7rem;
+    height: 4.5rem;
+    font-size: 0.9rem;
     border: 1px solid #0DB451;
     border-radius: 2px;
     text-align: justify;
     padding: 5px;
+    font-family: "Nunito", sans-serif;
 }
 
 .equip-visualizarNot, .brinde-visualizarNot{
     width: 6.5rem;
     height: 1.7rem;
     font-size: 0.8rem;
+    font-weight: bold;
     outline: none;
     border-radius: 40px;
     background-color: transparent;
@@ -256,7 +256,7 @@ iframe{
 
 .data-hora-pedido{
     bottom: 0;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     display: flex;
     justify-content: space-between;
 }
@@ -291,4 +291,21 @@ footer{
 #fabricaSoftware:hover{
     color: #0DB451;
     font-weight: bold;
+}
+
+.swiper{
+    width: 1200px;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: #0DB451;
+    opacity: 0.7;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: #0DB451; 
 }
